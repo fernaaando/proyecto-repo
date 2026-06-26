@@ -2,8 +2,4 @@
 star_classification.csv
 
 # Ignorar entornos de Python
-__pycache__/
-venv/
-env/
-.ipynb_checkpoints/
 .vscode
