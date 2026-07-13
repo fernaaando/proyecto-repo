@@ -1,5 +1,3 @@
-# ignorar el dataset
-star_classification.csv
 
 # Ignorar entornos de Python
 .vscode
