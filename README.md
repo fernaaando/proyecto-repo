@@ -9,5 +9,18 @@ Instrucciones de ejecucion:
 2) Verificar que las librerias 'pandas', 'scikit-learn', 'matplotlib' y 'seaborn' esten instaladas en el entorno donde se ejecutara el codigo.
 3) abrir el archivo 'clasificador.ipynb' y ejecutar celda por celda de manera secuencial.
 
+### Nueva Feat: Clasificación de un objeto nuevo
+Se incluye la función `clasificar_objeto(u, g, r, i, z, redshift)`, que permite usar el modelo ya entrenado para predecir la clase de un objeto astronómico nuevo a partir de sus magnitudes y su redshift. La función valida que todas las entradas sean numéricas y retorna la clase predicha junto con la probabilidad de cada clase.
+
+Ejemplo de uso:
+```python
+clasificar_objeto(u=22.79, g=21.65, r=20.05, i=19.18, z=18.74, redshift=0.52)
+```
+
+```
+# Resultado
+{'clase_predicha': 'GALAXY', 'probabilidades': {'GALAXY': 0.99, 'QSO': 0.01, 'STAR': 0.0}}
+```
+
 ### Declaración de uso de Inteligencia Artificial
 De acuerdo con las exigencias de la evaluación, se declara el uso de herramientas de Inteligencia Artificial (IA) como apoyo durante la elaboración de este informe. Su utilización se limitó estrictamente a la corrección ortográfica y gramatical, la adecuación del estilo de redacción y la estructuración de las ideas para el análisis del historial de Git. Todo el código fuente, el entrenamiento de los modelos predictivos y las decisiones técnicas sobre la integración y resolución de conflictos en el repositorio fueron desarrollados e interpretados de manera completamente personal.
